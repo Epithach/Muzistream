@@ -20,6 +20,8 @@ namespace Muzistream.MVVM
                 this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
 
+
+
         /// <summary>
         /// Notify and sets the property value.
         /// </summary>

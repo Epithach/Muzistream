@@ -28,6 +28,7 @@ namespace Muzistream_universal_app
             this.InitializeComponent();
             this.DataContext = new MainViewModel();
         }
+        
 
         private void Button_Click(Object sender, RoutedEventArgs e)
         {

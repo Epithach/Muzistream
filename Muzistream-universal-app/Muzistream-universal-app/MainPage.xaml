@@ -14,11 +14,11 @@
 
         <StackPanel Margin="20,50, 0, 0">
             <TextBlock Text="First Name :"/>
-            <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding FirstName}"></TextBox>
+            <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding FirstName, Mode=TwoWay}" Name="FName"></TextBox>
             <TextBlock Text="Last Name :"/>
-            <TextBox Width="500" HorizontalAlignment="Left"/>
+            <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding LastName, Mode=TwoWay}"/>
             <TextBlock Text="Email :"/>
-            <TextBox Width="500" HorizontalAlignment="Left"/>
+            <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding Email, Mode=TwoWay}"/>
             <Button Content="Save" Margin="450, 10, 0, 0" Command="{Binding OnButtonClick}"/>
 
             <TextBlock Text="{Binding Info}"/>

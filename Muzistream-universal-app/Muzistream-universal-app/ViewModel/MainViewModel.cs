@@ -100,8 +100,11 @@ namespace Muzistream.ViewModels
 
         public MainViewModel()
         {
-            //this.TextYolo = "Hello world!";
             this.Info = "";
+            this.FirstName = "";
+            this.LastName = "";
+            this.Email = "";
+
             this.OnButtonClick = new Command(this.OnButtonAction);
         }
 
@@ -111,7 +114,6 @@ namespace Muzistream.ViewModels
 
         private void OnButtonAction(object param)
         {
-            this.FirstName = this.
             //this.TextYolo = "Hello world!";
             //this.Result = FirstName + " " +  LastName + " " + Email;
             this.Info = "RES : " + this.FirstName + " " + this.LastName + " " + this.Email;
@@ -119,4 +121,5 @@ namespace Muzistream.ViewModels
 
         #endregion
     }
+
 }
