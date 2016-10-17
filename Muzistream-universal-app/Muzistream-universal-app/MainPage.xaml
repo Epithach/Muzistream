@@ -24,12 +24,67 @@
             <TextBlock Text="Confirm Password :"/>
             <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Confirm_Password, Mode=TwoWay}" />
 
+            <StackPanel Margin="20,50, 0, 0" Orientation="Horizontal">
+
+                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left">
+                    <ComboBoxItem Content = "1"/>
+                    <ComboBoxItem Content = "2"/>
+                    <ComboBoxItem Content = "3"/>
+                    <ComboBoxItem Content = "4"/>
+                    <ComboBoxItem Content = "5"/>
+                    <ComboBoxItem Content = "6"/>
+                    <ComboBoxItem Content = "7"/>
+                    <ComboBoxItem Content = "8"/>
+                    <ComboBoxItem Content = "8"/>
+                    <ComboBoxItem Content = "9"/>
+                    <ComboBoxItem Content = "10"/>
+                    <ComboBoxItem Content = "11"/>
+                    <ComboBoxItem Content = "12"/>
+                    <ComboBoxItem Content = "13"/>
+                    <ComboBoxItem Content = "14"/>
+                    <ComboBoxItem Content = "15"/>
+                    <ComboBoxItem Content = "16"/>
+                    <ComboBoxItem Content = "17"/>
+                    <ComboBoxItem Content = "18"/>
+                    <ComboBoxItem Content = "19"/>
+                    <ComboBoxItem Content = "20"/>
+                    <ComboBoxItem Content = "21"/>
+                    <ComboBoxItem Content = "22"/>
+                    <ComboBoxItem Content = "23"/>
+                    <ComboBoxItem Content = "24"/>
+                    <ComboBoxItem Content = "25"/>
+                    <ComboBoxItem Content = "26"/>
+                    <ComboBoxItem Content = "27"/>
+                    <ComboBoxItem Content = "28"/>
+                    <ComboBoxItem Content = "29"/>
+                    <ComboBoxItem Content = "30"/>
+                    <ComboBoxItem Content = "31"/>
+                </ComboBox>
+
+                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left">
+                    <ComboBoxItem Content = "1"/>
+                    <ComboBoxItem Content = "2"/>
+                    <ComboBoxItem Content = "3"/>
+                    <ComboBoxItem Content = "4"/>
+                    <ComboBoxItem Content = "5"/>
+                    <ComboBoxItem Content = "6"/>
+                    <ComboBoxItem Content = "7"/>
+                    <ComboBoxItem Content = "8"/>
+                    <ComboBoxItem Content = "8"/>
+                    <ComboBoxItem Content = "9"/>
+                    <ComboBoxItem Content = "10"/>
+                    <ComboBoxItem Content = "11"/>
+                    <ComboBoxItem Content = "12"/>
+                </ComboBox>
+
+            </StackPanel>
 
             <Button Content="Save" Margin="450, 10, 0, 0" Command="{Binding OnButtonClick}"/>
 
             <TextBlock Text="{Binding Info}"/>
 
+            
+
         </StackPanel>
     </Grid>
-    
 </Page>
