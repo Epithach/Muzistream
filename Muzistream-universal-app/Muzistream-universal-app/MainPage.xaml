@@ -23,10 +23,9 @@
             <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Password, Mode=TwoWay}" />
             <TextBlock Text="Confirm Password :"/>
             <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Confirm_Password, Mode=TwoWay}" />
-
-            <StackPanel Margin="20,50, 0, 0" Orientation="Horizontal">
-
-                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left">
+            <TextBlock Text="Date of birth :"/>
+            <StackPanel Margin="0,0, 0, 0" Orientation="Horizontal">
+                <ComboBox Height = "50" Width = "150" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
                     <ComboBoxItem Content = "1"/>
                     <ComboBoxItem Content = "2"/>
                     <ComboBoxItem Content = "3"/>
@@ -61,7 +60,7 @@
                     <ComboBoxItem Content = "31"/>
                 </ComboBox>
 
-                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left">
+                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
                     <ComboBoxItem Content = "1"/>
                     <ComboBoxItem Content = "2"/>
                     <ComboBoxItem Content = "3"/>
@@ -77,6 +76,45 @@
                     <ComboBoxItem Content = "12"/>
                 </ComboBox>
 
+                <ComboBox Height = "50" Width = "230" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
+                    <ComboBoxItem Content = "1980"/>
+                    <ComboBoxItem Content = "1981"/>
+                    <ComboBoxItem Content = "1982"/>
+                    <ComboBoxItem Content = "1983"/>
+                    <ComboBoxItem Content = "1984"/>
+                    <ComboBoxItem Content = "1985"/>
+                    <ComboBoxItem Content = "1986"/>
+                    <ComboBoxItem Content = "1987"/>
+                    <ComboBoxItem Content = "1988"/>
+                    <ComboBoxItem Content = "1989"/>
+                    <ComboBoxItem Content = "1990"/>
+                    <ComboBoxItem Content = "1991"/>
+                    <ComboBoxItem Content = "1992"/>
+                    <ComboBoxItem Content = "1993"/>
+                    <ComboBoxItem Content = "1994"/>
+                    <ComboBoxItem Content = "1995"/>
+                    <ComboBoxItem Content = "1996"/>
+                    <ComboBoxItem Content = "1997"/>
+                    <ComboBoxItem Content = "1998"/>
+                    <ComboBoxItem Content = "1999"/>
+                    <ComboBoxItem Content = "2000"/>
+                    <ComboBoxItem Content = "2001"/>
+                    <ComboBoxItem Content = "2002"/>
+                    <ComboBoxItem Content = "2003"/>
+                    <ComboBoxItem Content = "2004"/>
+                    <ComboBoxItem Content = "2005"/>
+                    <ComboBoxItem Content = "2006"/>
+                    <ComboBoxItem Content = "2007"/>
+                    <ComboBoxItem Content = "2008"/>
+                    <ComboBoxItem Content = "2009"/>
+                    <ComboBoxItem Content = "2010"/>
+                    <ComboBoxItem Content = "2011"/>
+                    <ComboBoxItem Content = "2012"/>
+                    <ComboBoxItem Content = "2013"/>
+                    <ComboBoxItem Content = "2014"/>
+                    <ComboBoxItem Content = "2015"/>
+                    <ComboBoxItem Content = "2016"/>
+                </ComboBox>
             </StackPanel>
 
             <Button Content="Save" Margin="450, 10, 0, 0" Command="{Binding OnButtonClick}"/>
