@@ -19,6 +19,12 @@
             <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding LastName, Mode=TwoWay}"/>
             <TextBlock Text="Email :"/>
             <TextBox Width="500" HorizontalAlignment="Left" Text="{Binding Email, Mode=TwoWay}"/>
+            <TextBlock Text="Password :"/>
+            <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Password, Mode=TwoWay}" />
+            <TextBlock Text="Confirm Password :"/>
+            <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Confirm_Password, Mode=TwoWay}" />
+
+
             <Button Content="Save" Margin="450, 10, 0, 0" Command="{Binding OnButtonClick}"/>
 
             <TextBlock Text="{Binding Info}"/>

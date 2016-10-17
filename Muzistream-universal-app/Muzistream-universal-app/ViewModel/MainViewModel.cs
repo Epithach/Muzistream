@@ -72,6 +72,29 @@ namespace Muzistream.ViewModels
             }
         }
 
+        private string password;
+        public string Password
+        {
+            get { return password; }
+            set
+            {
+                this.password = value;
+                this.OnPropertyChanged("Password");
+            }
+        }
+
+        private string confirm_password;
+        public string Confirm_Password
+        {
+            get { return confirm_password; }
+            set
+            {
+                this.confirm_password = value;
+                this.OnPropertyChanged("Confirm_Passwrd");
+            }
+        }
+        
+
         private string info;
         public string Info
         {
@@ -104,6 +127,8 @@ namespace Muzistream.ViewModels
             this.FirstName = "";
             this.LastName = "";
             this.Email = "";
+            this.Password = "";
+            this.Confirm_Password = "";
 
             this.OnButtonClick = new Command(this.OnButtonAction);
         }
@@ -114,9 +139,10 @@ namespace Muzistream.ViewModels
 
         private void OnButtonAction(object param)
         {
-            //this.TextYolo = "Hello world!";
-            //this.Result = FirstName + " " +  LastName + " " + Email;
-            this.Info = "RES : " + this.FirstName + " " + this.LastName + " " + this.Email;
+            bool confirm = this.Password.Equals(this.Confirm_Password);
+           
+            this.Info = "RES : " + this.FirstName + " " + this.LastName + " " + this.Email + " " + this.Password + " " + this.Confirm_Password + " " +"CONFIRM PASS : " + confirm;
+
         }
 
         #endregion
