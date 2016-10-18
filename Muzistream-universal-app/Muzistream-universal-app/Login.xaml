@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Muzistream_universal_app.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Muzistream_universal_app"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBlock Text="Sign In" Margin="10,10,0,0" FontSize="20" FontFamily="Segoe WP Light"></TextBlock>
+
+        <StackPanel Orientation="Vertical"  Margin="20,50, 0, 0">
+            <TextBlock Text="Login :"/>
+            <TextBox Text="{Binding Login, Mode=TwoWay}" Width="500" HorizontalAlignment="Left"/>
+            <TextBlock Text="Password :"/>
+            <TextBox Text="{Binding Password, Mode=TwoWay}" Width="500" HorizontalAlignment="Left"/>
+
+            <StackPanel Orientation="Horizontal" Margin=" 0, 10, 10, 0">
+                <Button Content="Sign Up" Margin="0, 0, 0, 0" Width="245" Command="{Binding OnButtonClick}"/>
+                <Button Content="Login" Margin="10, 0, 0, 0" Width="245" Command="{Binding OnButtonClick}"/>
+            </StackPanel>
+                
+        </StackPanel>
+        
+    </Grid>
+</Page>

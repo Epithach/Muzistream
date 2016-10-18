@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <TextBlock Text="Sign In" Margin="10,10,0,0" FontSize="20" FontFamily="Segoe WP Light"></TextBlock>
+        <TextBlock Text="Sign Up" Margin="10,10,0,0" FontSize="20" FontFamily="Segoe WP Light"></TextBlock>
 
 
         <StackPanel Margin="20,50, 0, 0">
@@ -25,7 +25,7 @@
             <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Confirm_Password, Mode=TwoWay}" />
             <TextBlock Text="Date of birth :"/>
             <StackPanel Margin="0,0, 0, 0" Orientation="Horizontal">
-                <ComboBox Height = "50" Width = "150" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0" ItemsSource="{Binding Day, Mode=OneWay}" SelectedValue="{Binding Day, Mode=OneWay}">
+                <ComboBox Height = "50" Width = "150" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0" SelectedItem="{ Binding Day }">
                     <ComboBoxItem Content = "1"/>
                     <ComboBoxItem Content = "2"/>
                     <ComboBoxItem Content = "3"/>
