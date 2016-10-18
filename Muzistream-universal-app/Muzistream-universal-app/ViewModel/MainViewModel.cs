@@ -75,7 +75,7 @@ namespace Muzistream.ViewModels
         private string password;
         public string Password
         {
-            get { return password; }
+            get { return this.password; }
             set
             {
                 this.password = value;
@@ -86,14 +86,57 @@ namespace Muzistream.ViewModels
         private string confirm_password;
         public string Confirm_Password
         {
-            get { return confirm_password; }
+            get { return this.confirm_password; }
             set
             {
                 this.confirm_password = value;
                 this.OnPropertyChanged("Confirm_Passwrd");
             }
         }
-        
+
+        private int day;
+        public int Day
+        {
+            get { return this.day;  }
+            set
+            {
+                this.day = value;
+                this.OnPropertyChanged("Day");
+            }
+        }
+
+        private int month;
+        public int Month
+        {
+            get { return this.month; }
+            set
+            {
+                this.month = value;
+                this.OnPropertyChanged("Month");
+            }
+        }
+
+        private int year;
+        public int Year
+        {
+            get { return this.year; }
+            set
+            {
+                this.year = value;
+                this.OnPropertyChanged("Year");
+            }
+        }
+
+        private bool accept;
+        public bool Accept
+        {
+            get { return this.accept; }
+            set
+            {
+                this.accept = value;
+                this.OnPropertyChanged("Accept");
+            }
+        }
 
         private string info;
         public string Info
@@ -105,7 +148,7 @@ namespace Muzistream.ViewModels
                 this.OnPropertyChanged("Info");
             }
         }
-
+        
         private ICommand onButtonClick;
         public ICommand OnButtonClick
         {
@@ -129,6 +172,10 @@ namespace Muzistream.ViewModels
             this.Email = "";
             this.Password = "";
             this.Confirm_Password = "";
+            this.Day = 1;
+            this.Month = 1;
+            this.Year = 2000;
+            this.Accept = false;
 
             this.OnButtonClick = new Command(this.OnButtonAction);
         }
@@ -141,7 +188,7 @@ namespace Muzistream.ViewModels
         {
             bool confirm = this.Password.Equals(this.Confirm_Password);
            
-            this.Info = "RES : " + this.FirstName + " " + this.LastName + " " + this.Email + " " + this.Password + " " + this.Confirm_Password + " " +"CONFIRM PASS : " + confirm;
+            this.Info = "RES : " + this.FirstName + " " + this.LastName + " " + this.Email + " " + this.Password + " " + this.Confirm_Password + " " +"CONFIRM PASS : " + confirm + " Accept :" + this.Accept + " Day : " + this.Day + " Month : " + this.Month + " Year : " + this.Year;
 
         }
 

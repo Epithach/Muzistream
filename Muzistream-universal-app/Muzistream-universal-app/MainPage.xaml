@@ -25,7 +25,7 @@
             <PasswordBox Width="500" HorizontalAlignment="Left" Password="{Binding Confirm_Password, Mode=TwoWay}" />
             <TextBlock Text="Date of birth :"/>
             <StackPanel Margin="0,0, 0, 0" Orientation="Horizontal">
-                <ComboBox Height = "50" Width = "150" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
+                <ComboBox Height = "50" Width = "150" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0" ItemsSource="{Binding Day, Mode=OneWay}" SelectedValue="{Binding Day, Mode=OneWay}">
                     <ComboBoxItem Content = "1"/>
                     <ComboBoxItem Content = "2"/>
                     <ComboBoxItem Content = "3"/>
@@ -60,7 +60,7 @@
                     <ComboBoxItem Content = "31"/>
                 </ComboBox>
 
-                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
+                <ComboBox Height = "50" Width = "100" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0" ItemsSource="{Binding Month, Mode=OneWay}" SelectedValue="{Binding Month, Mode=OneWay}">
                     <ComboBoxItem Content = "1"/>
                     <ComboBoxItem Content = "2"/>
                     <ComboBoxItem Content = "3"/>
@@ -76,7 +76,7 @@
                     <ComboBoxItem Content = "12"/>
                 </ComboBox>
 
-                <ComboBox Height = "50" Width = "230" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0">
+                <ComboBox Height = "50" Width = "230" HorizontalAlignment = "Left" Margin=" 0, 0, 10, 0" ItemsSource="{Binding Year, Mode=OneWay}" SelectedValue="{Binding Year, Mode=OneWay}">
                     <ComboBoxItem Content = "1980"/>
                     <ComboBoxItem Content = "1981"/>
                     <ComboBoxItem Content = "1982"/>
@@ -118,12 +118,12 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <CheckBox Margin="0,0,0,0"/>
+                <CheckBox Margin="0,0,0,0" IsChecked="{Binding Accept, Mode=TwoWay}" />
                 <TextBlock Text="I accept the term of the licence" Margin="0,0,0,0" VerticalAlignment="Center"></TextBlock>
             </StackPanel>
                 
             <StackPanel Orientation="Horizontal">
-                <Button Content="Save" Margin="0, 0, 0, 0" Width="245" Command="{Binding OnButtonClick}"/>
+                <Button Content="Return" Margin="0, 0, 0, 0" Width="245" Command="{Binding OnButtonClick}"/>
                 <Button Content="Save" Margin="10, 0, 0, 0" Width="245" Command="{Binding OnButtonClick}"/>
             </StackPanel>
             
